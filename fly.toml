@@ -1,14 +1,2 @@
-# fly.toml app configuration file generated for nyan-core on 2023-07-20T07:48:47-04:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
-app = "nyan-core"
-primary_region = "den"
-
-[http_service]
-  internal_port = 8080
-  force_https = true
-  auto_stop_machines = true
-  auto_start_machines = true
-  min_machines_running = 0
+[experimental]
+cmd = "./hello" # should be the name of the binary you want to run

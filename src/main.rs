@@ -90,7 +90,7 @@ async fn main() -> std::io::Result<()> {
             .route("/{path:.*}", web::post().to(musickit_post))
             .route("/{path:.*}", web::get().to(musickit))
     })
-    .bind("localhost:3001")?
+    .bind([::std::net::Ipv4Addr::UNSPECIFIED, 8080])?
     .run()
     .await
 }
