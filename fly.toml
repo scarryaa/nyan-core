@@ -1,2 +1,2 @@
 [experimental]
-cmd = "./hello" # should be the name of the binary you want to run
+cmd = "./nyan_core" # should be the name of the binary you want to run
